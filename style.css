@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Ubuntu, sans-serif;
+
+}
+
+body{
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    background-image:url("pattern.png");
+  
+/* Container(BOX) */
+}
+.container {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    /* Hide Scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 50px;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+.container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+.logo{
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+    image-rendering: crisp-edges;
+
+}
+
+.header{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    font-size: 2rem; 
+    text-align: left;
+    color: red;
+    font-weight: bolder;
+}
+.usdLogo{
+    width: 100px;   
+    height: auto;   
+    aspect-ratio: 1 / 1;  
+    object-fit: contain;  
+    /* margin-left: auto; */
+}
+.headerline{
+    border: none; /* Remove default border */
+    height: 2px; /* Set thickness */
+    background-color: #000; /* Set color */
+    margin: 40px 0; /* Set space above and below the line */
+}
+.welcomeText span{
+    color: red;
+    font-weight: bolder;
+}
+
+.aiclub_link{
+    text-decoration: none;
+}
+.welcomeText h1{
+    line-height: 2rem;
+    gap: 10px;
+    position: relative;
+    font-size: 1.875rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: inherit;
+}
+.welcomeText p{
+    font-size: 1.125rem;
+    line-height: 1.1;
+    color: inherit;
+    position: relative;
+}
+.welcomeText p p1{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1;
+    color: inherit;
+    position: relative;
+}
+/* Members */
+.memberNames {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background to highlight the section */
+    border-radius: 8px;
+}
+
+.memberNames h1 {
+
+    text-align: center;
+    line-height: 2rem;
+    gap: 10px;
+    position: relative;
+    font-size: 1.875rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: inherit;
+}
+
+.member-list p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 2px solid black; 
+    color: #444;
+    /* display: flex;  */
+    /* justify-content: space-between;   */
+}
+
+.member-list p .role {
+    font-weight: 600;
+    color: red;
+    font-size: 1.1rem;
+    margin-right: 8px; 
+}
+
+.member-list p span {
+    display: inline-block;
+}
+
+.member-list p:hover {
+    background-color: #eef5ff;
+    transition: background-color 0.3s ease;
+}
+.linkedin-icon {
+    margin-left: 10px; /* Space between name and LinkedIn icon */
+    display: inline-block;
+}
+
+.linkedin-icon img {
+    width: 20px; /* Set appropriate size for LinkedIn icon */
+    height: 20px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.linkedin-icon:hover img {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+.schedule {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.schedule h1 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: inherit;
+    margin-bottom: 20px;
+}
+
+.agenda-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.125rem;
+}
+
+.agenda-table thead {
+    background-color: red;
+    color: black;
+}
+
+.agenda-table th, 
+.agenda-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.agenda-table tbody tr {
+    background-color: #f9f9f9;
+}
+
+.agenda-table tbody tr:nth-child(even) {
+    background-color: #eef5ff;
+}
+
+.agenda-table tbody tr:hover {
+    background-color: #d1e7ff;
+}
+
+.agenda-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .agenda-table, .agenda-table th, .agenda-table td {
+        font-size: 1rem;
+    }
+}
+/* Arvhieve of all the classes */
+.archiveContent {
+    margin: 20px 0;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    /* border-radius: 8px; */
+}
+
+.archiveContent h1 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: inherit;
+    margin-bottom: 20px;
+}
+
+.archive-item {
+    margin: 10px 0;
+    padding: 15px;
+    /* background-color: #ffffff;  */
+    /* border: 1px solid #ddd;  */
+    /* border-radius: 8px;  */
+}
+
+.archive-item h2 {
+    font-size: 1.5rem;
+    color: red; /* Color for archive item titles */
+}
+
+.archive-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.content{
+    font-size: 1rem; 
+    line-height: 1.6;
+    color: #34495E;
+}
+.archive-item:before {
+    content: "";
+    display: inline-block;
+    width: 8px; /* Width of the icon */
+    height: 100%; /* Full height of the item */
+    background-color: #E74C3C; /* Color for the icon */
+    margin-right: 15px; /* Space between icon and text */
+    border-radius: 4px; /* Rounded corners for the icon */
+}

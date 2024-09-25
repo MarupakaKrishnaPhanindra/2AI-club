@@ -39,7 +39,7 @@ body{
 }
 .logo{
     max-width: 100%;
-    width: 100px;
+    width: 170px;
     height: auto;
     image-rendering: crisp-edges;
 
@@ -52,13 +52,13 @@ body{
     justify-content: space-between;
 }
 .title{
-    font-size: 2rem; 
+    font-size: 1.65rem; 
     text-align: left;
     color: red;
     font-weight: bolder;
 }
 .usdLogo{
-    width: 100px;   
+    width: 170px;   
     height: auto;   
     aspect-ratio: 1 / 1;  
     object-fit: contain;  
@@ -68,7 +68,7 @@ body{
     border: none; /* Remove default border */
     height: 2px; /* Set thickness */
     background-color: #000; /* Set color */
-    margin: 40px 0; /* Set space above and below the line */
+    margin: 20px 0; /* Set space above and below the line */
 }
 .welcomeText span{
     color: red;
